@@ -1,16 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
 import { AppComponent } from './app.component';
 
+import { PrimengModule } from './primeng/primeng.module';
+import { PropertiesPipe } from './properties.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PropertiesPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    PrimengModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
