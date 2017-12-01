@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 186.2 200" width="186.2" height="200">
+  <style type="text/css">
+    
+	.st0{fill:#DD0031;}
+	.st1{fill:#C3002F;}
+	.st2{fill:#FFFFFF;}
+
+  </style>
+  <g transform="translate(-31.9 -30)">
+    <polygon class="st0" points="125 230 125 230 125 230 203.9 186.3 218.1 63.2 125 30 31.9 63.2 46.1 186.3 " fill="#dd0031"/>
+    <polygon class="st1" points="125 230 125 230 203.9 186.3 218.1 63.2 125 30 125 52.2 125 52.1 125 153.4 " fill="#c3002f"/>
+    <path class="st2" d="M125 52.1 66.8 182.6v0h21.7v0l11.7-29.2h49.4l11.7 29.2v0H183v0zm17 83.3h-34l17-40.9z" fill="#fff"/>
+  </g>
+</svg>

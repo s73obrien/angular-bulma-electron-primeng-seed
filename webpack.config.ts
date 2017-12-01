@@ -390,6 +390,10 @@ module.exports = [
       ]
     },
     'plugins': [
+      new ElectronLiveReloadPlugin({
+        test: /main(\/|\\).+\.(ts|js)$/,
+        path: './dist/main_process.bundle.js'
+      }),
       new DefinePlugin({
         'process.env.NODE_ENV': JSON.stringify('development')
       }),
@@ -542,10 +546,6 @@ module.exports = [
       }]
     },
     'plugins': [
-      new ElectronLiveReloadPlugin({
-        test: /main(\/|\\).+\.(ts|js)$/,
-        path: './dist/main_process.bundle.js'
-      }),
       new WriteFilePlugin()
     ]
   }

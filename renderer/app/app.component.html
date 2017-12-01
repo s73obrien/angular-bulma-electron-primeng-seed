@@ -1,51 +1,34 @@
 <section class='hero is-primary is-fullheight'>
   <div class='hero-head'>
-
-  </div>
-  <div class='hero-body'>
-    <div class='container has-text-centered'>
-      <img class='logo' src='assets/angular-electron-primeng.svg'>
-      <div class='columns'>
-        <div class='column'>
-          <button class='button is-primary is-large'>Bulma {{ versions.bulma }}</button>
-        </div>
-        <div class='column'>
-          <button class='button is-primary is-large'>Angular {{ versions.angular }}</button>
-        </div>
-        <div class='column'>
-          <button class='button is-primary is-large'>Electron {{ versions.electron }}</button>
-        </div>
-        <div class='column'>
-          <button class='button is-primary is-large'>PrimeNG {{ versions.primeng }}</button>
-        </div>
+    <div class='level'>
+      <div class='level-item'>
+        <a class='link'>
+          <img src='assets/angular-icon.svg'> Angular {{ versions.angular }}
+        </a>
+      </div>
+      <div class='level-item'>
+        <a class='link'>
+          <img src='assets/bulma-icon.svg'> Bulma {{ versions.bulma }}
+        </a>
+      </div>
+      <div class='level-item'>
+        <img class='logo' src='assets/angular-electron-primeng.svg'>
+      </div>
+      <div class='level-item'>
+        <a class='link'>
+          <img src='assets/electron-icon.svg'> Electron {{ versions.electron }}
+        </a>
+      </div>
+      <div class='level-item'>
+        <a class='link'>
+          <img src='assets/primeng-icon.svg'> PrimeNG {{ versions.primeng }}
+        </a>
       </div>
     </div>
   </div>
+  <div class='hero-body'>
+    <router-outlet></router-outlet>
+  </div>
   <div class='hero-foot'>
-
   </div>
 </section>
-<!-- <p-calendar></p-calendar>
-<input class='input'>
-<button class='button'>Bulma</button>
-<div class=''>Name:</div>
-<div class=''>{{ pData.name }}</div>
-<div class=''>Version: </div>
-<div class=''>{{ pData.version }}</div>
-
-<p-accordion>
-  <p-accordionTab header='Dependencies' [selected]='true'>
-    <p-dataTable [value]='pData.dependencies | properties'>
-      <p-column field='key' header='Package'></p-column>
-      <p-column field='value' header='Version'></p-column>
-    </p-dataTable>
-  </p-accordionTab>
-
-  <p-accordionTab header='Dev. Dependencies'>
-    <p-dataTable [value]='pData.devDependencies | properties'>
-      <p-column field='key' header='Package'></p-column>
-      <p-column field='value' header='Version'></p-column>
-    </p-dataTable>
-  </p-accordionTab>
-
-</p-accordion> -->

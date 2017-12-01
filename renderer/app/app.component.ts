@@ -1,4 +1,4 @@
-import { Component, VERSION, OnInit } from '@angular/core';
+import { Component, OnInit, VERSION } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 import * as packageData from '../../package.json';
@@ -20,8 +20,7 @@ export class AppComponent implements OnInit{
 
   constructor(
     private title: Title
-  ){
-  }
+  ) {}
 
   ngOnInit() {
     this.title.setTitle('Angular + Bulma + Electron + PrimeNG v' + packageData['version']);

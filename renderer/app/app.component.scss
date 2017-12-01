@@ -4,8 +4,25 @@
   background: radial-gradient(circle at center, lighten($primary, 20%), $primary);
 }
 
-.logo {
-  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 1));
-  max-width: 500px;
-  width: 100%;
+.hero-body {
+  flex-direction: column;
 }
+
+.logo {
+  image-rendering: auto;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 1));
+  height: 96px;
+  margin: 16px 0px;
+  transform: scale3d(1, 1, 1);
+  transition: transform .2s;
+}
+
+.logo:hover {
+  transform: scale3d(1.1, 1.1, 1);
+}
+
+.link img {
+  height: 24px;
+  margin-right: 8px;
+}
+

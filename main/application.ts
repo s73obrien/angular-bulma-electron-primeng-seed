@@ -13,8 +13,9 @@ class ElectronApplication {
 
   constructor() {
     // if we already have an object created, return that instead
-    if (ElectronApplication.instance)
+    if (ElectronApplication.instance) {
       return ElectronApplication.instance;
+    }
 
     // This method will be called when Electron has finished
     // initialization and is ready to create browser windows.
@@ -28,7 +29,7 @@ class ElectronApplication {
       if (process.platform !== 'darwin') {
         app.quit();
       }
-    })
+    });
 
     app.on('activate', () => {
       // On OS X it's common to re-create a window in the app when the
@@ -36,7 +37,7 @@ class ElectronApplication {
       if (this.window === null) {
         this.createWindow();
       }
-    })
+    });
 
     // Store the current instance in the static class instance
     ElectronApplication.instance = this;
@@ -45,17 +46,17 @@ class ElectronApplication {
   createWindow() {
     // Create the browser window
     this.window = new BrowserWindow({
-      width: 800,
+      width: 840,
       height: 800,
       show: false,
-      center: false      
+      center: false
     });
 
     // Showing the window gracefully
     // https://github.com/electron/electron/blob/master/docs/api/browser-window.md
     this.window.once('ready-to-show', () => {
       this.window.show();
-    })
+    });
 
     // Emitted when the window is closed
     this.window.on('closed', () => {
@@ -63,7 +64,7 @@ class ElectronApplication {
       // in an array if your app supports multi windows, this is the time
       // when you should delete the corresponding element.
       this.window = null;
-    })
+    });
 
     // Load the main index.html
     this.window.loadURL(
@@ -72,11 +73,12 @@ class ElectronApplication {
         protocol: 'file',
         slashes: true
       })
-    )
+    );
 
     // Open the DevTools.
-    if (process.env.NODE_ENV !== 'production')
+    if (process.env.NODE_ENV !== 'production') {
       this.window.webContents.openDevTools();
+    }
   }
 }
 
