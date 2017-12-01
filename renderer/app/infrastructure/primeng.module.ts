@@ -8,7 +8,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // This will result in a smaller bundle size
 import {
-  TreeModule,
+  AccordionModule,
+  DataTableModule,
+  SharedModule,
+  DialogModule,
+  TreeTableModule,
+  CalendarModule,
 } from 'primeng/primeng';
 
 @NgModule({
@@ -16,10 +21,20 @@ import {
     BrowserModule,
     BrowserAnimationsModule,
 
-    TreeModule,
+    AccordionModule,
+    DataTableModule,
+    SharedModule,
+    DialogModule,
+    TreeTableModule,
+    CalendarModule,
   ],
   exports: [
-    TreeModule,
+    AccordionModule,
+    DataTableModule,
+    SharedModule,
+    DialogModule,
+    TreeTableModule,
+    CalendarModule,
   ]
 })
 export class PrimengModule { }

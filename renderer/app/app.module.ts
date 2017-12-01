@@ -3,27 +3,30 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-import { PrimengModule, RoutingModule, MaterialModule } from './infrastructure';
+import { PrimengModule, RoutingModule } from './infrastructure';
 
 import { PropertiesPipe } from './properties.pipe';
 
+import { AngularComponent } from './angular/angular.component';
+import { BulmaComponent } from './bulma/bulma.component';
+import { ElectronComponent } from './electron/electron.component';
+import { PrimengComponent } from './primeng/primeng.component';
 import { HomeComponent } from './home/home.component';
-import { SideBarComponent } from './side-bar/side-bar.component';
-import { ResizablePanelComponent } from './resizable-panel/resizable-panel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    AngularComponent,
+    BulmaComponent,
+    ElectronComponent,
+    PrimengComponent,
     HomeComponent,
     PropertiesPipe,
-    SideBarComponent,
-    ResizablePanelComponent
   ],
   imports: [
     BrowserModule,
     PrimengModule,
     RoutingModule,
-    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

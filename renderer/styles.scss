@@ -1,91 +1,77 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~material-design-icons/iconfont/material-icons.css';
 @import '~font-awesome/css/font-awesome.min.css';
-@import '~@angular/material/theming';
+@import '~primeng/resources/primeng.min.css';
 
-@include mat-core();
+// Colors
+@import '~sass-material-colors/sass/sass-material-colors';
 
-$primary: mat-palette($mat-grey);
-$secondary: mat-palette($mat-light-blue);
-$theme: mat-dark-theme($primary, $secondary);
-@include angular-material-theme($theme);
+$primary: material-color('blue', '800');
 
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+// Bulma
+@import '~bulma/bulma.sass';
+
+$fontFamily: $body-family;
+$fontSize: $body-size;
+$borderRadius: $radius;
+$disabledOpacity: 0.35;
+
+//Header
+$headerBorderWidth: $table-head-cell-border-width;
+$headerBorderColor: $grey-lighter;
+$headerBgColor: $table-background-color;
+$headerTextColor: $table-head-cell-color;
+$headerFontWeight: $body-weight;
+$headerIconTextColor: $table-head-cell-color;
+
+//Content
+$contentBorderWidth: $table-cell-border-width;
+$contentBorderColor: $grey-lighter;
+$contentBgColor: $table-background-color;
+$contentTextColor: $body-color;
+
+//Default State
+$stateDefaultBorderWidth: 1px;
+$stateDefaultBorderColor: $border;
+$stateDefaultBgColor: $button-background-color;
+$stateDefaultTextColor: $button-color;
+
+//Active State
+$stateActiveBorderColor: $button-active-border-color;
+$stateActiveBgColor: $button-background-color;
+$stateActiveTextColor: $button-active-color;
+
+//Highlight State
+$stateHighlightBorderColor: $button-active-border-color;
+$stateHighlightBgColor: $warning;
+$stateHighlightTextColor: $white;
+
+//Focus State
+$stateFocusBorderColor: $button-focus-border-color;
+$stateFocusBgColor: $button-background-color;
+$stateFocusTextColor: $button-focus-color;
+
+//Error State
+$stateErrorBorderColor: $danger;
+$stateErrorBgColor: $danger;
+$stateErrorTextColor: $white;
+
+//Hover State
+$stateHoverBorderColor: $button-hover-border-color;
+$stateHoverBgColor: $button-background-color;
+$stateHoverTextColor: $button-hover-color;
+
+//Forms
+$inputBgColor: $input-background-color;
+$inputTextColor: $input-color;
+$invalidInputBorderColor: $danger;
+$inputGroupTextColor: $input-color;
+
+@import '~primeng/resources/themes/_theme.scss';
+
+.ui-datepicker .ui-state-default {
+  border-color: transparent;
 }
 
-// @import '~primeng/resources/primeng.min.css';
-
-// // Colors
-// @import '~sass-material-colors/sass/sass-material-colors';
-
-// $primary: material-color('green', '800');
-
-// $fontFamily: $body-family;
-// $fontSize: $body-size;
-// $borderRadius: $radius;
-// $disabledOpacity: 0.35;
-
-// //Header
-// $headerBorderWidth: $table-head-cell-border-width;
-// $headerBorderColor: $grey-lighter;
-// $headerBgColor: $table-background-color;
-// $headerTextColor: $table-head-cell-color;
-// $headerFontWeight: $body-weight;
-// $headerIconTextColor: $table-head-cell-color;
-
-// //Content
-// $contentBorderWidth: $table-cell-border-width;
-// $contentBorderColor: $grey-lighter;
-// $contentBgColor: $table-background-color;
-// $contentTextColor: $body-color;
-
-// //Default State
-// $stateDefaultBorderWidth: 1px;
-// $stateDefaultBorderColor: $border;
-// $stateDefaultBgColor: $button-background-color;
-// $stateDefaultTextColor: $button-color;
-
-// //Active State
-// $stateActiveBorderColor: $button-active-border-color;
-// $stateActiveBgColor: $button-background-color;
-// $stateActiveTextColor: $button-active-color;
-
-// //Highlight State
-// $stateHighlightBorderColor: $button-active-border-color;
-// $stateHighlightBgColor: $warning;
-// $stateHighlightTextColor: $white;
-
-// //Focus State
-// $stateFocusBorderColor: $button-focus-border-color;
-// $stateFocusBgColor: $button-background-color;
-// $stateFocusTextColor: $button-focus-color;
-
-// //Error State
-// $stateErrorBorderColor: $danger;
-// $stateErrorBgColor: $danger;
-// $stateErrorTextColor: $white;
-
-// //Hover State
-// $stateHoverBorderColor: $button-hover-border-color;
-// $stateHoverBgColor: $button-background-color;
-// $stateHoverTextColor: $button-hover-color;
-
-// //Forms
-// $inputBgColor: $input-background-color;
-// $inputTextColor: $input-color;
-// $invalidInputBorderColor: $danger;
-// $inputGroupTextColor: $input-color;
-
-// @import '~primeng/resources/themes/_theme.scss';
-
-// .ui-datepicker .ui-state-default {
-//   border-color: transparent;
-// }
+html, body {
+  overflow-y: hidden;
+}
