@@ -1,5 +1,5 @@
 {
-  "name": "angular-bulma-electron-primeng-seed",
+  "name": "excel-data-search",
   "version": "0.9.0",
   "license": "MIT",
   "scripts": {
@@ -13,18 +13,22 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^5.0.0",
+    "@angular/animations": "^5.0.4",
+    "@angular/cdk": "^5.0.0-rc.2",
     "@angular/common": "^5.0.0",
     "@angular/compiler": "^5.0.0",
     "@angular/core": "^5.0.4",
     "@angular/forms": "^5.0.0",
     "@angular/http": "^5.0.0",
+    "@angular/material": "^5.0.0-rc.2",
     "@angular/platform-browser": "^5.0.0",
     "@angular/platform-browser-dynamic": "^5.0.0",
     "@angular/router": "^5.0.0",
     "core-js": "^2.4.1",
     "electron": "^1.7.9",
     "font-awesome": "^4.7.0",
+    "material-design-icons": "^3.0.1",
+    "ng2-split-pane": "^1.4.0",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14"
   },
@@ -41,7 +45,6 @@
     "@types/webpack": "^3.8.1",
     "autoprefixer": "^6.5.3",
     "bulma": "0.6.1",
-    "primeng": "5.0.2",
     "circular-dependency-plugin": "^3.0.0",
     "codelyzer": "^4.0.1",
     "copy-webpack-plugin": "^4.1.1",
@@ -62,6 +65,7 @@
     "less-loader": "^4.0.5",
     "postcss-loader": "^2.0.8",
     "postcss-url": "^7.1.2",
+    "primeng": "5.0.2",
     "protractor": "~5.1.2",
     "raw-loader": "^0.5.1",
     "sass-loader": "^6.0.3",
@@ -80,26 +84,19 @@
     "webpack-dev-server": "~2.9.3",
     "write-file-webpack-plugin": "^4.2.0"
   },
-  "description": "Seed using Angular 5, Electron, PrimeNg, and Bulma",
+  "description": "Desktop app that searches contents of Excel files in selected folders for given regular expressions",
   "main": "karma.conf.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/s73obrien/angular-bulma-electron-primeng-seed.git"
+    "url": "git+https://github.com/s73obrien/excel-data-search.git"
   },
   "keywords": [
-    "Angular",
-    "5",
-    "Bulma",
-    "Electron",
-    "PrimeNg",
-    "seed",
-    "desktop",
-    "application",
-    "mobile"
+    "excel",
+    "search"
   ],
   "author": "Sean O'Brien",
   "bugs": {
-    "url": "https://github.com/s73obrien/angular-bulma-electron-primeng-seed/issues"
+    "url": "https://github.com/s73obrien/excel-data-search/issues"
   },
-  "homepage": "https://github.com/s73obrien/angular-bulma-electron-primeng-seed#readme"
+  "homepage": "https://github.com/s73obrien/excel-data-search#readme"
 }

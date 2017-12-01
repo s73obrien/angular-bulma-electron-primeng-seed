@@ -10,19 +10,14 @@ import 'electron';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
-  versions = {
-    angular: VERSION.full,
-    electron: process.versions.electron,
-    primeng: packageData['devDependencies']['primeng'],
-    bulma: packageData['devDependencies']['bulma']
-  }
-
+export class AppComponent implements OnInit {
+  sideBarWidth = 100;
   constructor(
     private title: Title
   ) {}
 
   ngOnInit() {
-    this.title.setTitle('Angular + Bulma + Electron + PrimeNG v' + packageData['version']);
+    this.title.setTitle('Excel Data Search Tool v' + packageData['version']);
   }
+
 }

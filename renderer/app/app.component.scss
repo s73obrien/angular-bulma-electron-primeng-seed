@@ -1,28 +1,20 @@
 @import '../styles.scss';
 
 .hero {
-  background: radial-gradient(circle at center, lighten($primary, 20%), $primary);
+  // background: radial-gradient(circle at center, mat-color($primary, A500), mat-color($primary, A700));
+  background-color: mat-color($primary);
 }
 
-.hero-body {
-  flex-direction: column;
+:host {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.logo {
-  image-rendering: auto;
-  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 1));
-  height: 96px;
-  margin: 16px 0px;
-  transform: scale3d(1, 1, 1);
-  transition: transform .2s;
+.main-content {
+  background-color: mat-color($primary);
+  flex: 1 0 0;
+  height: 100%;
 }
-
-.logo:hover {
-  transform: scale3d(1.1, 1.1, 1);
-}
-
-.link img {
-  height: 24px;
-  margin-right: 8px;
-}
-

@@ -1,10 +1,15 @@
-<h1 class='title'>Angular + Bulma + Electron + PrimeNG</h1>
-<h2 class='subtitle'>Web Standards On Desktop</h2>
-
-<p class='section'>
-  This is a seed from which you can build an application that fuses the latest in Angular with the latest in Electron and then styles it all with Bulma and PrimeNG (for the components).
-</p>
-
-<p class='section'>
-  It offers live-reload functionality for both the renderer processes (through Angular) and the main process (through a webpack plugin).
-</p>
+<div class='field'>
+  <label class='label'>Search Query</label>
+  <div class='control'>
+    <input class='input' type='text' placeholder='Search term...'>
+  </div>
+</div>
+<div>
+  <h3>Files Found</h3>
+  <!-- <p-tree [value]='foundFiles'></p-tree> -->
+  <div class='select is-multiple'>
+    <select size='20'>
+      <option *ngFor='let file of foundFiles'>{{ file }}</option>
+    </select>
+  </div>
+</div>
